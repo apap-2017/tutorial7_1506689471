@@ -30,7 +30,7 @@ public class StudentRestController {
 		return student;
 	}
 	
-	@RequestMapping("/course/view/{id}")
+	@RequestMapping("/course/view/{idCourse}")
 	public CourseModel viewCourse (@PathVariable(value = "idCourse") String idCourse){
 		CourseModel course = studentService.selectCourse(idCourse);
 		return course;
